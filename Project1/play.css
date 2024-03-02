@@ -1,0 +1,80 @@
+.ace-card,
+.jack-card,
+.king-card,
+.queen-card {
+  position: absolute;
+}
+
+.king-card {
+  animation: king 1s ease 0.5s forwards;
+}
+
+.ace-card {
+  animation: ace 1s ease 0.9s forwards;
+}
+
+.queen-card {
+  animation: queen 1s ease 1.4s forwards;
+}
+.jack-card {
+  animation: jack 1s ease 2.7s forwards;
+}
+
+.winning_modal {
+  .winning_container {
+    position: absolute;
+    opacity: 0%;
+    width: 500px;
+    height: 300px;
+    background-color: aliceblue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showModal 0.5s ease 4s forwards;
+    flex-direction: column;
+    h2 {
+        color: black;
+    }
+  }
+}
+
+@keyframes king {
+  100% {
+    display: block !important;
+    transform: translate(-50vw, 0px);
+  }
+}
+
+@keyframes ace {
+  100% {
+    display: block !important;
+    transform: translate(-50vw, 400px);
+  }
+}
+
+@keyframes queen {
+  100% {
+    display: block !important;
+    transform: translate(-47vw, 40px);
+  }
+}
+
+@keyframes jack {
+  100% {
+    display: block !important;
+    transform: translate(-48vw, 380px);
+  }
+}
+
+@keyframes showModal {
+  0% {
+  }
+  100% {
+    opacity: 80%;
+  }
+}
